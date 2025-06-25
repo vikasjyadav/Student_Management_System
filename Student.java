@@ -94,6 +94,13 @@ class StudentManagement{
         System.out.print("Enter ID : ");
         int ID = sc.nextInt();
         sc.nextLine();
+        for(Student s: students){
+        if(s.GetID() == ID){
+            System.out.println("The ID " + ID + " already exists. Please enter a different ID.");
+            return; 
+        }
+}
+
 
         System.out.print("Enter Name Of The Student : ");
         String Name = sc.nextLine();
